@@ -1,0 +1,12 @@
+version: '3'
+services:
+    backend:
+      image: docker-qs/backend
+      container_name: docker-qs-backend
+      ports:
+        - "8080:8080"
+    frontend:
+      image: docker-qs/ui
+      container_name: docker-qs-ui
+      ports:
+        - "4200:4200"
